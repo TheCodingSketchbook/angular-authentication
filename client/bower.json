@@ -1,0 +1,19 @@
+{
+  "name": "UserAuthenticationWeb",
+  "version": "0.0.0",
+  "authors": [
+    "indigo0086 <indigo0086@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.2.3",
+    "angular-route": "~1.2.3"
+  }
+}
