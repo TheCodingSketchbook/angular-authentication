@@ -1,6 +1,15 @@
+angular.module("app.directives", [])
 angular.module("authentication", []);
 angular.module("login", ["ngRoute"]);
+angular.module("user", ["ngRoute"]);
 
-angular.module("app", ["authentication", "login", "ngRoute"])
-    .config(function($routeProvider){
-    });
+var app = angular.module("app", [
+    "ngRoute",
+    "directives",
+    "authentication",
+    "login",
+    "user"]);
+
+app.config(function ($routeProvider) {
+    $routeProvider.otherwise({ redirectTo: "/welcome" });
+});
